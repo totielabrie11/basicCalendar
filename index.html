@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calendario Interactivo</title>
+</head>
+<body>
+  <div class="container">
+        <div class="calendar">
+            <div class="header">
+                <div id="current-date" class="current-date"></div>
+                <div id="clock" class="clock"></div>
+            </div>
+            <div class="days"></div>
+        </div>
+        <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Agregar Evento</h2>
+            <label for="user-select">Seleccionar Usuario:</label>
+            <select id="user-select">
+            <option value="Carlos">Carlos</option>
+            <option value="Leonardo">Leonardo</option>
+            <option value="Gomez">Gomez</option>
+            </select>
+            <button id="add-user-button">Ingresar Nuevo US</button>
+            <textarea id="event-textarea" placeholder="Contenido del Evento"></textarea>
+            <button id="submit-event-button">Agregar Evento</button>
+        </div>
+        </div>
+        <div class="events">
+            <h2>Eventos Creados</h2>
+            <ul id="event-list" class="event-list"></ul>
+        </div>
+  </div>  
+  <script src="script.js"></script>
+</body>
+</html>

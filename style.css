@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .calendar {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .current-date {
+    font-weight: bold;
+  }
+  
+  .clock {
+    font-size: 14px;
+  }
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .day {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .selected-day {
+    background-color: #f0f0f0;
+  }
+  
+  .event-day {
+    background-color: #ffd700;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-button {
+    float: right;
+    cursor: pointer;
+  }
+  
+/* ... (mantén el código anterior) */
+
+.events {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .events h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+
+.event-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .event-list li {
+    margin-bottom: 20px; /* Aumenta este valor para un espacio mayor */
+  }
+  
+.event-list li:last-child {
+    
+    margin-bottom: 0; /* Elimina el margen inferior del último evento */
+  }
+
+  
